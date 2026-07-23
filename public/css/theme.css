@@ -1,0 +1,36 @@
+.theme-light {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-hover: #e2e8f0;
+  --bg-glass: rgba(255, 255, 255, 0.8);
+  --border: #e2e8f0;
+  --border-light: #cbd5e1;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+.theme-light .char-card {
+  background: var(--bg-card);
+}
+
+.theme-light .sidebar {
+  background: var(--bg-secondary);
+}
+
+.theme-light .navbar {
+  background: var(--bg-glass);
+}
+
+.theme-animations-disabled * {
+  animation: none !important;
+  transition: none !important;
+}
+
+.font-size-small { font-size: 0.875rem; }
+.font-size-medium { font-size: 1rem; }
+.font-size-large { font-size: 1.125rem; }

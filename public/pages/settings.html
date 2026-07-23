@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - FaaUnicode</title>
+  <meta name="description" content="FaaUnicode settings">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div style="display:flex;align-items:center;gap:0.75rem">
+      <button class="hamburger" aria-label="Toggle menu">☰</button>
+      <a href="/" class="navbar-brand" data-nav>Faa<span>Unicode</span></a>
+    </div>
+    <div class="navbar-links">
+      <a href="/" data-nav>Home</a>
+      <a href="/pages/explorer.html" data-nav>Explorer</a>
+      <a href="/pages/categories.html" data-nav>Categories</a>
+      <a href="/pages/inspector.html" data-nav>Inspector</a>
+      <a href="/pages/analyzer.html" data-nav>Analyzer</a>
+      <a href="/pages/nickname.html" data-nav>Nickname</a>
+      <a href="/pages/favorites.html" data-nav>Favorites</a>
+      <a href="/pages/settings.html" data-nav class="active">Settings</a>
+    </div>
+  </nav>
+
+  <div class="app-layout">
+    <div class="sidebar-overlay"></div>
+    <aside class="sidebar">
+      <nav class="sidebar-nav">
+        <a href="/" data-nav><span class="icon">🏠</span>Home</a>
+        <a href="/pages/explorer.html" data-nav><span class="icon">🔍</span>Explorer</a>
+        <a href="/pages/categories.html" data-nav><span class="icon">📂</span>Categories</a>
+        <a href="/pages/inspector.html" data-nav><span class="icon">🔬</span>Inspector</a>
+        <a href="/pages/analyzer.html" data-nav><span class="icon">📊</span>Analyzer</a>
+        <a href="/pages/nickname.html" data-nav><span class="icon">✨</span>Nickname</a>
+        <a href="/pages/favorites.html" data-nav><span class="icon">⭐</span>Favorites</a>
+        <a href="/pages/recent.html" data-nav><span class="icon">⏰</span>Recent</a>
+        <a href="/pages/about.html" data-nav><span class="icon">ℹ️</span>About</a>
+        <a href="/pages/settings.html" data-nav class="active"><span class="icon">⚙️</span>Settings</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="page">
+        <h1 class="page-title">Settings</h1>
+
+        <div class="card" style="max-width:500px">
+          <div class="settings-group">
+            <h3>Appearance</h3>
+            <div class="setting-row">
+              <span class="label">Theme</span>
+              <select id="setting-theme" class="select-style">
+                <option value="dark">Dark</option>
+                <option value="light">Light</option>
+              </select>
+            </div>
+            <div class="setting-row">
+              <span class="label">Font Size</span>
+              <select id="setting-font-size" class="select-style">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+              </select>
+            </div>
+            <div class="setting-row">
+              <span class="label">Animations</span>
+              <select id="setting-animations" class="select-style">
+                <option value="enabled">Enabled</option>
+                <option value="disabled">Disabled</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="settings-group">
+            <h3>Data</h3>
+            <div class="setting-row">
+              <span class="label">Reset All Settings</span>
+              <button id="setting-reset" class="btn btn-secondary">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="/js/config.js"></script>
+  <script src="/js/utils.js"></script>
+  <script src="/js/storage.js"></script>
+  <script src="/js/clipboard.js"></script>
+  <script src="/js/toast.js"></script>
+  <script src="/js/modal.js"></script>
+  <script src="/js/router.js"></script>
+  <script src="/js/search.js"></script>
+  <script src="/js/unicode.js"></script>
+  <script src="/js/render.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FaaUnicode - Unicode Explorer</title>
+  <meta name="description" content="Professional Unicode Explorer — browse, search, copy, and analyze Unicode characters">
+  <meta property="og:title" content="FaaUnicode - Unicode Explorer">
+  <meta property="og:description" content="Browse, search, copy, and analyze Unicode characters">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="FaaUnicode - Unicode Explorer">
+  <meta name="twitter:description" content="Professional Unicode Explorer">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div style="display:flex;align-items:center;gap:0.75rem">
+      <button class="hamburger" aria-label="Toggle menu">☰</button>
+      <a href="/" class="navbar-brand" data-nav>Faa<span>Unicode</span></a>
+    </div>
+    <div class="navbar-links">
+      <a href="/" data-nav>Home</a>
+      <a href="/pages/explorer.html" data-nav>Explorer</a>
+      <a href="/pages/categories.html" data-nav>Categories</a>
+      <a href="/pages/inspector.html" data-nav>Inspector</a>
+      <a href="/pages/analyzer.html" data-nav>Analyzer</a>
+      <a href="/pages/nickname.html" data-nav>Nickname</a>
+      <a href="/pages/favorites.html" data-nav>Favorites</a>
+      <a href="/pages/settings.html" data-nav>Settings</a>
+    </div>
+  </nav>
+
+  <div class="app-layout">
+    <div class="sidebar-overlay"></div>
+    <aside class="sidebar" role="navigation" aria-label="Sidebar navigation">
+      <nav class="sidebar-nav">
+        <a href="/" data-nav><span class="icon">🏠</span>Home</a>
+        <a href="/pages/explorer.html" data-nav><span class="icon">🔍</span>Explorer</a>
+        <a href="/pages/categories.html" data-nav><span class="icon">📂</span>Categories</a>
+        <a href="/pages/inspector.html" data-nav><span class="icon">🔬</span>Inspector</a>
+        <a href="/pages/analyzer.html" data-nav><span class="icon">📊</span>Analyzer</a>
+        <a href="/pages/nickname.html" data-nav><span class="icon">✨</span>Nickname</a>
+        <a href="/pages/favorites.html" data-nav><span class="icon">⭐</span>Favorites</a>
+        <a href="/pages/recent.html" data-nav><span class="icon">⏰</span>Recent</a>
+        <a href="/pages/about.html" data-nav><span class="icon">ℹ️</span>About</a>
+        <a href="/pages/settings.html" data-nav><span class="icon">⚙️</span>Settings</a>
+      </nav>
+    </aside>
+
+    <main class="main-content" role="main">
+      <div class="page">
+        <section class="hero">
+          <h1>FaaUnicode</h1>
+          <p>Explore the universe of Unicode characters</p>
+          <div class="search-bar">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="home-search" placeholder="Search characters, symbols, or emoji... (Ctrl+K)" aria-label="Search characters">
+          </div>
+        </section>
+
+        <div id="stats"></div>
+
+        <div id="search-results" class="grid grid-6" style="display:none;margin-bottom:2rem"></div>
+
+        <div class="section-header">
+          <h2>Popular Categories</h2>
+          <a href="/pages/categories.html" class="btn btn-secondary" data-nav>View All</a>
+        </div>
+        <div id="home-categories" class="categories-grid" style="margin-bottom:2rem"></div>
+
+        <div class="section-header">
+          <h2>Random Characters</h2>
+        </div>
+        <div id="home-random" class="grid grid-6" style="margin-bottom:2rem"></div>
+
+        <div class="section-header">
+          <h2>Recent Characters</h2>
+          <a href="/pages/recent.html" class="btn btn-secondary" data-nav>View All</a>
+        </div>
+        <div id="home-recent" class="grid grid-6" style="margin-bottom:2rem"></div>
+
+        <div class="section-header">
+          <h2>Favorites</h2>
+          <a href="/pages/favorites.html" class="btn btn-secondary" data-nav>View All</a>
+        </div>
+        <div id="home-favorites" class="grid grid-6"></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="/js/config.js"></script>
+  <script src="/js/utils.js"></script>
+  <script src="/js/storage.js"></script>
+  <script src="/js/clipboard.js"></script>
+  <script src="/js/toast.js"></script>
+  <script src="/js/modal.js"></script>
+  <script src="/js/router.js"></script>
+  <script src="/js/search.js"></script>
+  <script src="/js/unicode.js"></script>
+  <script src="/js/render.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

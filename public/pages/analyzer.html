@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Analyzer - FaaUnicode</title>
+  <meta name="description" content="Analyze text character count, byte length, UTF size, word count, and more">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div style="display:flex;align-items:center;gap:0.75rem">
+      <button class="hamburger" aria-label="Toggle menu">☰</button>
+      <a href="/" class="navbar-brand" data-nav>Faa<span>Unicode</span></a>
+    </div>
+    <div class="navbar-links">
+      <a href="/" data-nav>Home</a>
+      <a href="/pages/explorer.html" data-nav>Explorer</a>
+      <a href="/pages/categories.html" data-nav>Categories</a>
+      <a href="/pages/inspector.html" data-nav>Inspector</a>
+      <a href="/pages/analyzer.html" data-nav class="active">Analyzer</a>
+      <a href="/pages/nickname.html" data-nav>Nickname</a>
+      <a href="/pages/favorites.html" data-nav>Favorites</a>
+      <a href="/pages/settings.html" data-nav>Settings</a>
+    </div>
+  </nav>
+
+  <div class="app-layout">
+    <div class="sidebar-overlay"></div>
+    <aside class="sidebar">
+      <nav class="sidebar-nav">
+        <a href="/" data-nav><span class="icon">🏠</span>Home</a>
+        <a href="/pages/explorer.html" data-nav><span class="icon">🔍</span>Explorer</a>
+        <a href="/pages/categories.html" data-nav><span class="icon">📂</span>Categories</a>
+        <a href="/pages/inspector.html" data-nav><span class="icon">🔬</span>Inspector</a>
+        <a href="/pages/analyzer.html" data-nav class="active"><span class="icon">📊</span>Analyzer</a>
+        <a href="/pages/nickname.html" data-nav><span class="icon">✨</span>Nickname</a>
+        <a href="/pages/favorites.html" data-nav><span class="icon">⭐</span>Favorites</a>
+        <a href="/pages/recent.html" data-nav><span class="icon">⏰</span>Recent</a>
+        <a href="/pages/about.html" data-nav><span class="icon">ℹ️</span>About</a>
+        <a href="/pages/settings.html" data-nav><span class="icon">⚙️</span>Settings</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="page">
+        <h1 class="page-title">Text Analyzer</h1>
+        <p class="page-subtitle">Analyze text statistics instantly</p>
+        <textarea id="analyzer-input" class="inspector-textarea" placeholder="Type or paste text here..." aria-label="Text to analyze"></textarea>
+        <div id="analyzer-results"></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="/js/config.js"></script>
+  <script src="/js/utils.js"></script>
+  <script src="/js/storage.js"></script>
+  <script src="/js/clipboard.js"></script>
+  <script src="/js/toast.js"></script>
+  <script src="/js/modal.js"></script>
+  <script src="/js/router.js"></script>
+  <script src="/js/search.js"></script>
+  <script src="/js/unicode.js"></script>
+  <script src="/js/render.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - FaaUnicode</title>
+  <meta name="description" content="About FaaUnicode - Professional Unicode Explorer">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div style="display:flex;align-items:center;gap:0.75rem">
+      <button class="hamburger" aria-label="Toggle menu">☰</button>
+      <a href="/" class="navbar-brand" data-nav>Faa<span>Unicode</span></a>
+    </div>
+    <div class="navbar-links">
+      <a href="/" data-nav>Home</a>
+      <a href="/pages/explorer.html" data-nav>Explorer</a>
+      <a href="/pages/categories.html" data-nav>Categories</a>
+      <a href="/pages/inspector.html" data-nav>Inspector</a>
+      <a href="/pages/analyzer.html" data-nav>Analyzer</a>
+      <a href="/pages/nickname.html" data-nav>Nickname</a>
+      <a href="/pages/favorites.html" data-nav>Favorites</a>
+      <a href="/pages/settings.html" data-nav>Settings</a>
+    </div>
+  </nav>
+
+  <div class="app-layout">
+    <div class="sidebar-overlay"></div>
+    <aside class="sidebar">
+      <nav class="sidebar-nav">
+        <a href="/" data-nav><span class="icon">🏠</span>Home</a>
+        <a href="/pages/explorer.html" data-nav><span class="icon">🔍</span>Explorer</a>
+        <a href="/pages/categories.html" data-nav><span class="icon">📂</span>Categories</a>
+        <a href="/pages/inspector.html" data-nav><span class="icon">🔬</span>Inspector</a>
+        <a href="/pages/analyzer.html" data-nav><span class="icon">📊</span>Analyzer</a>
+        <a href="/pages/nickname.html" data-nav><span class="icon">✨</span>Nickname</a>
+        <a href="/pages/favorites.html" data-nav><span class="icon">⭐</span>Favorites</a>
+        <a href="/pages/recent.html" data-nav><span class="icon">⏰</span>Recent</a>
+        <a href="/pages/about.html" data-nav class="active"><span class="icon">ℹ️</span>About</a>
+        <a href="/pages/settings.html" data-nav><span class="icon">⚙️</span>Settings</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="page">
+        <h1 class="page-title">About FaaUnicode</h1>
+        <div class="card" style="max-width:600px">
+          <p style="margin-bottom:1rem;color:var(--text-secondary)">
+            FaaUnicode is a professional Unicode Explorer built with pure HTML, CSS, and JavaScript.
+          </p>
+          <p style="margin-bottom:1rem;color:var(--text-secondary)">
+            Browse thousands of Unicode characters, search instantly, copy in multiple formats,
+            inspect codepoints, analyze text, and generate decorated nicknames.
+          </p>
+          <p style="margin-bottom:1rem;color:var(--text-secondary)">
+            Everything works completely offline after the initial load.
+          </p>
+          <div style="border-top:1px solid var(--border);padding-top:1rem;margin-top:1rem">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;font-size:var(--font-size-sm)">
+              <span style="color:var(--text-muted)">Version</span>
+              <span>1.0.0</span>
+              <span style="color:var(--text-muted)">Author</span>
+              <span>Faa Ramadhan</span>
+              <span style="color:var(--text-muted)">Tech Stack</span>
+              <span>HTML5, CSS3, Vanilla JS</span>
+              <span style="color:var(--text-muted)">License</span>
+              <span>MIT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="/js/config.js"></script>
+  <script src="/js/utils.js"></script>
+  <script src="/js/storage.js"></script>
+  <script src="/js/clipboard.js"></script>
+  <script src="/js/toast.js"></script>
+  <script src="/js/modal.js"></script>
+  <script src="/js/router.js"></script>
+  <script src="/js/search.js"></script>
+  <script src="/js/unicode.js"></script>
+  <script src="/js/render.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

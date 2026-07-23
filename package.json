@@ -1,0 +1,16 @@
+{
+  "name": "faunicode",
+  "version": "1.0.0",
+  "description": "Professional Unicode Explorer - Browse, search, copy, and analyze Unicode characters",
+  "author": "Faa Ramadhan",
+  "license": "MIT",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["unicode", "explorer", "characters", "symbols", "emoji"],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,31 @@
+const CONFIG = {
+  APP_NAME: 'FaaUnicode',
+  VERSION: '1.0.0',
+  STORAGE_KEYS: {
+    FAVORITES: 'faunicode_favorites',
+    RECENT: 'faunicode_recent',
+    SETTINGS: 'faunicode_settings',
+  },
+  RECENT_LIMIT: 100,
+  SEARCH_DEBOUNCE: 300,
+  PAGE_SIZE: 48,
+  RANDOM_COUNT: 24,
+  THEMES: {
+    DARK: 'dark',
+    LIGHT: 'light',
+  },
+  FONT_SIZES: ['small', 'medium', 'large'],
+  GRID_SIZES: ['compact', 'normal', 'comfortable'],
+  ROUTES: {
+    HOME: '/',
+    EXPLORER: '/pages/explorer.html',
+    CATEGORIES: '/pages/categories.html',
+    INSPECTOR: '/pages/inspector.html',
+    ANALYZER: '/pages/analyzer.html',
+    NICKNAME: '/pages/nickname.html',
+    FAVORITES: '/pages/favorites.html',
+    RECENT: '/pages/recent.html',
+    ABOUT: '/pages/about.html',
+    SETTINGS: '/pages/settings.html',
+  },
+};
